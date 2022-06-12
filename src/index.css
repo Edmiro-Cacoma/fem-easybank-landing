@@ -1,0 +1,62 @@
+@tailwind base;
+
+@layer base {
+    body {
+        @apply text-lg;
+        @apply font-main;
+        @apply overflow-x-hidden;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 1024px ) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 3fr ;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "logo links links2 cta" 
+                             "socials links links2 copyright";
+        justify-items:start;
+        gap: 1rem;
+    }
+    
+    .grid-logo {
+        grid-area: logo;
+        align-self: start;
+    }
+
+    .grid-socials {
+        grid-area: socials;
+    }
+    
+    .grid-links {
+        grid-area: links;
+    }
+    
+    .grid-links2 {
+        grid-area: links2;
+    }
+    
+    .grid-cta {
+        grid-area: cta;
+        align-self: start;
+        justify-self:end;
+    }
+    
+    .grid-copyright {
+        grid-area: copyright;
+        align-self:end;
+        justify-self:end;
+    }
+}
+
+footer svg path {
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer a svg path:hover {
+    fill: hsl(136, 65%, 51%);
+}
