@@ -5,7 +5,7 @@ function Hero() {
     return (
         <header className="bg-neutrals-200">
             <div className="lg:flex lg:flex-row-reverse lg:items-center">
-                <div className="relative bg-[url('../../images/bg-intro-mobile.svg')] bg-center bg-cover min-h-[25rem] max-h-[38rem] 
+                <div className="relative bg-[url('../../public/images/bg-intro-mobile.svg')] bg-center bg-cover min-h-[25rem] max-h-[38rem] 
                 lg:bg-[url('../../images/bg-intro-desktop.svg')] lg:bg-left lg:min-h-[46rem] lg:max-h-[50rem] lg:basis-1/2">
                     <img src={Mockup} alt="" className="max-h-[29rem] mx-auto lg:absolute lg:-right-36 lg:-top-4 lg:max-h-[55rem] "/>
                 </div>
