@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from '../../images/logo.svg'
-import hamburger from '../../images/icon-hamburger.svg'
-import cancel from '../../images/icon-close.svg'
+import logo from '../../public/images/logo.svg'
+import hamburger from '../../public/images/icon-hamburger.svg'
+import cancel from '../../public/images/icon-close.svg'
 
 function Nav() {
     const [Toggle, setToggle] = useState(false)
