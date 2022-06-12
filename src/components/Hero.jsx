@@ -1,5 +1,5 @@
 import React from "react";
-import Mockup from '../../images/image-mockups.png'
+import Mockup from '../../public/images/image-mockups.png'
 
 function Hero() {
     return (
